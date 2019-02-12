@@ -3,14 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopComponent } from './top/top.component';
+
+import { HttpClientModule }    from '@angular/common/http';
+
+import { FormsModule }   from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
